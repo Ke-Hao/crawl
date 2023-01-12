@@ -44,7 +44,7 @@ save(video_info[0],video_info[1],video_info[2])
 ad = AudioFileClip(video_info[0]+'.mp3')
 vd = VideoFileClip(video_info[0]+'.mp4')
 
-vd2 = vd.set_audio(ad)  # 将提取到的音频和视频文件进行合成
+vd2 = vd.set_audio(ad)  
 vd2.write_videofile(video_info[0]+'output.mp4')  # 输出新的视频文件
 os.remove(video_info[0]+'.mp3')
 os.remove(video_info[0]+'.mp4')
