@@ -36,7 +36,7 @@ def save(title,audiourl,videourl):
     print("视频和音频已保存……")
 
 
-url='https://www.bilibili.com/video/BV1kW4y1V7Uj'
+url='https://www.bilibili.com/video/BV1kW4y1V7Uj'  #可以修改为对应的网址 
 video_info=getinfo(url)
 print(video_info)
 save(video_info[0],video_info[1],video_info[2])
